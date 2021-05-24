@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cryp-To</string>
+    <string name="cryptocurrency_supported">Cryptocurrency supported</string>
+    <string name="footer_text">CrypTo - Developed By Maneesh</string>
+</resources>
