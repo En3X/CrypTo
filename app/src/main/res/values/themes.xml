@@ -13,4 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/main_bg_color</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.CrypTo.splashScreen" >
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
 </resources>

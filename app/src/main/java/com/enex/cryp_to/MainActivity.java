@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -15,14 +17,36 @@ public class MainActivity extends AppCompatActivity {
     int dimen,margin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+         // Splash screen control
+        setTheme(R.style.Theme_CrypTo);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         layout = findViewById(R.id.scrollerView);
         dimen = dpToPx(150,this);
         margin = dpToPx(20,this);
         holderImageSetup(layout,dimen,margin);
-    }
 
+        // Contact developer control
+        findViewById(R.id.contactDeveloper).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String username = "_maneesh_pandey";
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse("http://instagram.com/_u/" + username));
+                    intent.setPackage("com.instagram.android");
+                    startActivity(intent);
+                }
+                catch (android.content.ActivityNotFoundException anfe)
+                {
+                    toast("Instagram app not found! Opening instagram in browser.");
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("https://www.instagram.com/" + username)));
+                }
+            }
+        });
+    }
     public static int dpToPx(int dp, Context context) {
         float density = context.getResources().getDisplayMetrics().density;
         return Math.round((float) dp * density);
