@@ -6,7 +6,7 @@
 
 The application is still in beta and can provide information about 14 crypto currency right now. Any suggestions, feedbacks are welcome. You can always contact the developer via **[Instagram](https://www.instagram.com/_maneesh_pandey)**.
 
-> *Note: Cryp-To fetches data about crypto currency using API. The data may or may not be a hundred percent accurate. If you are planning on trading using this app as reference, make sure to cross check the rates.
+> *Note: Cryp-To fetches data about crypto currency using API. The data may or may not be a hundred percent accurate. If you are planning on trading using this app as reference, make sure to cross check the rates.*
 
 ------
 
