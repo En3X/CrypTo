@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.CrypTo" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.CrypTo" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,8 +12,5 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/main_bg_color</item>
         <!-- Customize your theme here. -->
-    </style>
-    <style name="Theme.CrypTo.splashScreen" >
-        <item name="android:windowBackground">@drawable/splashscreen</item>
     </style>
 </resources>

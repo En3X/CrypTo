@@ -13,4 +13,5 @@
         -->
     <color name="main_bg_color">#9570FB</color>
     <color name="main_holder_color">#A689FF</color>
+    <color name="gray">#D8D8D8</color>
 </resources>
