@@ -6,7 +6,6 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.net.Uri;
@@ -36,9 +35,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     LinearLayout layout;
@@ -59,11 +58,8 @@ public class MainActivity extends AppCompatActivity {
         layout = findViewById(R.id.scrollerView);
         dimen = dpToPx(150,this);
         margin = dpToPx(20,this);
-
         holderImageSetup(layout,dimen,margin);
-
         // Contact developer control
-
         queue = Volley.newRequestQueue(this);
         fetchNewsData();
         newslist = findViewById(R.id.newsList);
@@ -98,7 +94,11 @@ public class MainActivity extends AppCompatActivity {
         public void run() {
             String[] source = new String[lengthOfNews];
             String[] newsDataArray = new String[lengthOfNews];
-            String apiurl = "https://cryptopanic.com/api/v1/posts/?auth_token=bde4b75c734b5340f15130617bea538744d64dc7";
+            Random rand = new Random();
+            int randomNum = rand.nextInt((10 - 1) + 1) + 1;
+
+
+            String apiurl = "https://cryptopanic.com/api/v1/posts/?auth_token=bde4b75c734b5340f15130617bea538744d64dc7&public=true&page="+randomNum;
             JsonObjectRequest jsonData = new JsonObjectRequest(Request.Method.GET, apiurl, null,
                     new Response.Listener<JSONObject>() {
                         @Override

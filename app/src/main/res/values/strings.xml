@@ -2,4 +2,7 @@
     <string name="app_name">Cryp-To</string>
     <string name="cryptocurrency_supported">Cryptocurrency supported</string>
     <string name="footer_text">CrypTo - Developed By Maneesh</string>
+    <string name="unknown">Unknown</string>
+    <string name="market_cap">Market Cap</string>
+    <string name="learn_more">Learn More</string>
 </resources>
