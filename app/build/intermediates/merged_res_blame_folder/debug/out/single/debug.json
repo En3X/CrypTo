@@ -16,12 +16,12 @@
         "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-xxhdpi\\holder_uniswap.png"
     },
     {
-        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_holder_cardano.png.flat",
-        "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-mdpi\\holder_cardano.png"
-    },
-    {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_info_24.png.flat",
         "source": "A:\\androidprojects\\CrypTo\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_info_24.png"
+    },
+    {
+        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_holder_cardano.png.flat",
+        "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-mdpi\\holder_cardano.png"
     },
     {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_info_24.png.flat",
@@ -36,16 +36,16 @@
         "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-ldpi\\holder_tether.png"
     },
     {
-        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_settings_24.png.flat",
-        "source": "A:\\androidprojects\\CrypTo\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_settings_24.png"
-    },
-    {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_info_24.png.flat",
         "source": "A:\\androidprojects\\CrypTo\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_info_24.png"
+    },
+    {
+        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_settings_24.png.flat",
+        "source": "A:\\androidprojects\\CrypTo\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_settings_24.png"
     },
     {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_holder_cardano.png.flat",
@@ -60,12 +60,12 @@
         "source": "A:\\androidprojects\\CrypTo\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_info_24.png"
     },
     {
-        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_holder_palkadot.png.flat",
-        "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-hdpi\\holder_palkadot.png"
-    },
-    {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_data.xml.flat",
         "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\layout\\activity_data.xml"
+    },
+    {
+        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_holder_palkadot.png.flat",
+        "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-hdpi\\holder_palkadot.png"
     },
     {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -148,6 +148,10 @@
         "source": "A:\\androidprojects\\CrypTo\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\forward_arrow.png"
     },
     {
+        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_info_24.xml.flat",
+        "source": "A:\\androidprojects\\CrypTo\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_info_24.xml"
+    },
+    {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_holder_tether.png.flat",
         "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable\\holder_tether.png"
     },
@@ -158,10 +162,6 @@
     {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_holder_palkadot.png.flat",
         "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-xxhdpi\\holder_palkadot.png"
-    },
-    {
-        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_info_24.xml.flat",
-        "source": "A:\\androidprojects\\CrypTo\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_info_24.xml"
     },
     {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_holder_litecoin.png.flat",
@@ -372,12 +372,12 @@
         "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-mdpi\\holder_litecoin.png"
     },
     {
-        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_holder_uniswap.png.flat",
-        "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-ldpi\\holder_uniswap.png"
-    },
-    {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_info_24.png.flat",
         "source": "A:\\androidprojects\\CrypTo\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_info_24.png"
+    },
+    {
+        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_holder_uniswap.png.flat",
+        "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-ldpi\\holder_uniswap.png"
     },
     {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_about_app.png.flat",
@@ -508,12 +508,12 @@
         "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-ldpi\\holder_stellar.png"
     },
     {
-        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_holder_chainlink.png.flat",
-        "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-xxxhdpi\\holder_chainlink.png"
-    },
-    {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_info_24.png.flat",
         "source": "A:\\androidprojects\\CrypTo\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_info_24.png"
+    },
+    {
+        "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_holder_chainlink.png.flat",
+        "source": "A:\\androidprojects\\CrypTo\\app\\src\\main\\res\\drawable-xxxhdpi\\holder_chainlink.png"
     },
     {
         "merged": "A:\\androidprojects\\CrypTo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_holder_litecoin.png.flat",
