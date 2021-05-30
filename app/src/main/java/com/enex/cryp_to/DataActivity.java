@@ -104,6 +104,22 @@ public class DataActivity extends AppCompatActivity {
         if(str == null) return str;
         return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
+    public void gotoDeveloperIg(){
+        String username = "_maneesh_pandey";
+        try {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("http://instagram.com/_u/" + username));
+            intent.setPackage("com.instagram.android");
+            startActivity(intent);
+        }
+        catch (android.content.ActivityNotFoundException anfe)
+        {
+            showToast("Instagram app not found! Opening instagram in browser.");
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://www.instagram.com/" + username)));
+        }
+    }
+
     protected void showToast(String msg) {
         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
     }
@@ -115,6 +131,7 @@ public class DataActivity extends AppCompatActivity {
         chart.setDragEnabled(false);
         chart.setScaleEnabled(false);
         chart.setTouchEnabled(false);
+        chart.setNoDataText("Chart will update once data is fetched from server!");
         // hiding grid
         chart.getAxisLeft().setDrawGridLines(true);
         chart.getAxisLeft().setTextColor(Color.rgb(26,26,26));
@@ -179,7 +196,9 @@ public class DataActivity extends AppCompatActivity {
                 public void onErrorResponse(VolleyError error) {
                     Log.d("Error", "Error: " + error);
                     if (error instanceof NetworkError || error instanceof NoConnectionError || error instanceof TimeoutError) {
-                        showToast("It seems like you do not have internet connection!");
+                        showToast("No internet connection!");
+                        exitDialog("No internet connection",
+                                "Data cannot be shown without internet connection. If you are connected to internet and the error keeps occuring, please contact developer!");
                     } else {
                         showToast("Error: " + error.getMessage());
                     }
@@ -251,6 +270,29 @@ public class DataActivity extends AppCompatActivity {
 
     }
 
+    public void exitDialog(String title,String message){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(title);
+        builder.setIcon(R.drawable.ic_baseline_warning_24);
+        builder.setCancelable(false);
+        builder.setMessage(message);
+        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+                finish();
+            }
+        });
+        builder.setNeutralButton("Contact Developer",new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                gotoDeveloperIg();
+                finish();
+            }
+        });
+        builder.show();
+    }
+
     public class TextData implements Runnable{
         RequestQueue queue;
         String apiURL;
@@ -292,7 +334,11 @@ public class DataActivity extends AppCompatActivity {
                     public void onErrorResponse(VolleyError error) {
 //                        Log.d("Error", "Error: " + error);
                         if (error instanceof NetworkError || error instanceof NoConnectionError || error instanceof TimeoutError) {
-                            showToast("It seems like you do not have internet connection!");
+//                            showToast("It seems like you do not have internet connection!");
+                            showToast("No internet connection!");
+
+                            exitDialog("No internet connection",
+                                    "Data cannot be shown without internet connection. If you are connected to internet and the error keeps occuring, please contact developer!");
                         } else {
                             showToast("Error: " + error.getMessage());
                         }

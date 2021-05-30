@@ -5,4 +5,5 @@
     <string name="unknown">Unknown</string>
     <string name="market_cap">Market Cap</string>
     <string name="learn_more">Learn More</string>
+    <string name="show_news">Show News</string>
 </resources>

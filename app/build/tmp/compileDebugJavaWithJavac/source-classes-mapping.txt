@@ -1,9 +1,13 @@
 com/enex/cryp_to/BuildConfig.java
  com.enex.cryp_to.BuildConfig
+com/enex/cryp_to/SettingsActivity.java
+ com.enex.cryp_to.SettingsActivity
 com/enex/cryp_to/MainActivity.java
  com.enex.cryp_to.MainActivity
  com.enex.cryp_to.MainActivity$1
- com.enex.cryp_to.MainActivity$1$1
+ com.enex.cryp_to.MainActivity$2
+ com.enex.cryp_to.MainActivity$3
+ com.enex.cryp_to.MainActivity$3$1
  com.enex.cryp_to.MainActivity$News
  com.enex.cryp_to.MainActivity$News$1
  com.enex.cryp_to.MainActivity$News$2
@@ -13,6 +17,8 @@ com/enex/cryp_to/DataActivity.java
  com.enex.cryp_to.DataActivity$2
  com.enex.cryp_to.DataActivity$3
  com.enex.cryp_to.DataActivity$4
+ com.enex.cryp_to.DataActivity$5
+ com.enex.cryp_to.DataActivity$6
  com.enex.cryp_to.DataActivity$FetchData
  com.enex.cryp_to.DataActivity$FetchData$1
  com.enex.cryp_to.DataActivity$FetchData$2

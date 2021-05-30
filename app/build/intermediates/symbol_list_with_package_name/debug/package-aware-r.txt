@@ -50,6 +50,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array number_news
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1667,6 +1668,7 @@ drawable holder_xrp
 drawable ic_baseline_info_24
 drawable ic_baseline_info_dark
 drawable ic_baseline_settings_24
+drawable ic_baseline_warning_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_mtrl_checked_circle
@@ -1728,6 +1730,12 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id NewsSetting
+id OpenBrowser
+id OpenBrowserSwitch
+id OpenInstagram
+id OpenInstagramSwitch
+id PermissionSettings
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2009,6 +2017,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id numberOfNewsTitle
 id off
 id on
 id outline
@@ -2071,6 +2080,7 @@ id settings
 id shortcut
 id showCustom
 id showHome
+id showNewsSwitch
 id showTitle
 id sin
 id skipCollapsed
@@ -2124,6 +2134,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2139,6 +2150,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
+id toolbar_settings
 id top
 id topPanel
 id touch_outside
@@ -2150,6 +2162,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id twentyNews
 id unchecked
 id uniform
 id unlabeled
@@ -2226,6 +2239,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_data
 layout activity_main
+layout activity_settings
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2285,6 +2299,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout news_spinner
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -2417,6 +2432,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
+string show_news
 string status_bar_notification_info_overflow
 string unknown
 style AlertDialog_AppCompat
@@ -2829,6 +2845,7 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_CrypTo
+style Theme_CrypTo_spinnerPopup
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light

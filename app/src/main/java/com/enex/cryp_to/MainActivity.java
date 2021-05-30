@@ -1,10 +1,12 @@
 package com.enex.cryp_to;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -124,7 +126,13 @@ public class MainActivity extends AppCompatActivity {
                 public void onErrorResponse(VolleyError error) {
                     Log.d("Error", "Error: " + error);
                     if (error instanceof NetworkError || error instanceof NoConnectionError || error instanceof TimeoutError) {
-                        toast("It seems like you do not have internet connection!");
+                        toast("No internet connection!");
+
+                        exitDialog("No internet connection",
+                                "It seems like you are not connected to internet.\nMost of the features of the app relies upon internet to work." +
+                                        "You can still use application but might not be able to get info and data on any thing.\n" +
+                                        "If you are connected to internet and the error keeps occuring, please contact developer!");
+
                     } else {
                         toast("Error: " + error.getMessage());
                     }
@@ -149,6 +157,27 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void exitDialog(String title,String message){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(title);
+        builder.setIcon(R.drawable.ic_baseline_warning_24);
+        builder.setCancelable(false);
+        builder.setMessage(message);
+        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        builder.setNeutralButton("Contact Developer",new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                gotoDeveloperIg();
+            }
+        });
+        builder.show();
+    }
+
     public void gotoAboutpage(){
         toast("About us page is yet to be made!");
     }
@@ -170,7 +199,8 @@ public class MainActivity extends AppCompatActivity {
          */
         switch (item.getItemId()){
             case R.id.settings:
-                toast("Setting page is yet to be made!");
+                Intent intent = new Intent(this,SettingsActivity.class);
+                startActivity(intent);
                 break;
             case R.id.contactDeveloper:
                 gotoDeveloperIg();

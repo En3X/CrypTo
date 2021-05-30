@@ -19,6 +19,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.CrypTo" >
+        <activity android:name="com.enex.cryp_to.SettingsActivity" />
         <activity android:name="com.enex.cryp_to.DataActivity" />
         <activity android:name="com.enex.cryp_to.MainActivity" >
             <intent-filter>

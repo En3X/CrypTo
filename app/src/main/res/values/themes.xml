@@ -13,4 +13,8 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/main_bg_color</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.CrypTo.spinnerPopup">
+        <item name="android:padding">10sp</item>
+
+    </style>
 </resources>
